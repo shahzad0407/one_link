@@ -227,7 +227,7 @@ const Generate = () => {
             <div className='grid md:grid-cols-2 grid-cols-1 h-[100vh]'>
                 <div className="bg-purple-600 flex flex-col items-center justify-center gap-8">
                     <div className='border-black px-3 gap-2 border-2 flex md:flex-row flex-col items-center justify-center w-[90%] bg-blue-200 rounded-xl py-4'>
-                        <span className='font-semibold'>Your Linktree is live: <Link target='_blank' href={user?.username} className='text-blue-500 underline'>localhost:3000/{user?.username}</Link></span>
+                        <span className='font-semibold'>Your Linktree is live: <Link target='_blank' href={user?.username} className='text-blue-500 underline'>{profileUrl}</Link></span>
                         <Button onClick={copyToCipboard} className={`${poppins.className}`}>Copy your OneLink URL</Button>
                     </div>
                     <div className='flex items-center justify-between w-[88%]'>

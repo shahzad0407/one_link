@@ -16,7 +16,7 @@ export default async function Page({ params }) {
   
   return  <div className='gap-8 flex flex-col items-center justify-center w-[100wh] h-[100vh] bg-slate-800 text-white'>
       <Avatar className='w-24 h-24'>
-        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+        <AvatarImage src={userAvailable[0].picture} alt="@shadcn" />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
       <div className='font-bold '>@{username}</div>
