@@ -46,7 +46,8 @@ const Page = () => {
         title: "User registered",
       })
 
-      router.push(`/verify/${data.username}`)
+      // router.push(`/verify/${data.username}`)
+      router.push(`/generate`)
       setIsSubmitting(false)
 
     } else {
